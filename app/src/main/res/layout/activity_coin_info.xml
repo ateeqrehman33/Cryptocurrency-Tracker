@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg"
+    android:padding="5dp"
+    android:theme="@style/AppThemeActionBae"
+    tools:context="digitald.technologies.crypto_tracker.CoinInfo"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="@color/md_cyan_200"
+                app:cardCornerRadius="5dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="9dp"
+                tools:layout_editor_absoluteY="9dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/md_white_1000"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/onehr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_toEndOf="@+id/rank"
+                        android:text="1hr"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sevenday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="26dp"
+                        android:text="7days"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="43dp"
+                        android:layout_toLeftOf="@+id/sevenday"
+                        android:text="24hr"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+
+                        android:text="Rank"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/twofourhrvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignBaseline="@+id/onehrvalue2"
+                        android:layout_alignBottom="@+id/onehrvalue2"
+                        android:layout_alignStart="@+id/hr"
+                        android:text="null"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/md_grey_800"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/twofourhrvalue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignBaseline="@+id/twofourhrvalue"
+                        android:layout_alignBottom="@+id/twofourhrvalue"
+                        android:layout_alignStart="@+id/sevenday"
+                        android:text="null"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/md_grey_800"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/onehrvalue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignBaseline="@+id/rankvalue"
+                        android:layout_alignBottom="@+id/rankvalue"
+                        android:layout_alignStart="@+id/onehr"
+                        android:text="null"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/md_grey_800"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/rankvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/rank"
+                        android:layout_below="@+id/rank"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="7dp"
+                        android:text="null"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/md_grey_800"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/img_lay"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@id/cv1"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="@color/md_cyan_200"
+                app:cardCornerRadius="5dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="9dp"
+                tools:layout_editor_absoluteY="9dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/md_white_1000"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/coin_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center_horizontal"
+                        android:src="@drawable/btc" />
+
+                    <TextView
+                        android:id="@+id/btc_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/coin_img"
+                        android:gravity="center_horizontal"
+
+                        android:text="1 BTC = 1 BTC"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/green"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+               </android.support.v7.widget.CardView>
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_below="@id/img_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-5749455352203480/2597838213"></com.google.android.gms.ads.AdView>
+
+            <View
+                android:id="@+id/centerShim"
+                android:layout_height="match_parent"
+                android:layout_width="5dp"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"/>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toLeftOf="@id/centerShim"
+                android:layout_below="@+id/adView"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/mctext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="Price USD"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/priceusd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/mctext"
+                        android:layout_below="@+id/mctext"
+                        android:layout_marginTop="11dp"
+                        android:gravity="center_horizontal"
+                        android:text="null"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv3"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@id/centerShim"
+                android:layout_height="100dp"
+                android:layout_alignRight="@+id/cv1"
+                android:layout_below="@+id/adView"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textpusd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="Market Cap"
+
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/marketcapvalue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textpusd"
+                        android:layout_below="@+id/textpusd"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="null"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/cv2"
+
+                android:layout_toLeftOf="@+id/centerShim"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="Available Supply"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/asvalue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textas"
+                        android:layout_below="@+id/textas"
+                        android:layout_marginTop="11dp"
+                        android:gravity="center_horizontal"
+                        android:text="null"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv5"
+                android:layout_width="match_parent"
+
+                android:layout_toRightOf="@+id/centerShim"
+                android:layout_height="100dp"
+
+                android:layout_alignParentRight="true"
+
+                android:layout_below="@+id/cv3"
+                android:layout_marginBottom="5dp"
+
+                android:padding="5dp"
+
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/cv5">
+
+                    <TextView
+                        android:id="@+id/textts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="Total Supply"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tsvalue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textts"
+                        android:layout_below="@+id/textts"
+                        android:layout_marginTop="11dp"
+                        android:gravity="center_horizontal"
+                        android:text="null"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv6"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@id/centerShim"
+                android:layout_height="100dp"
+                android:layout_below="@+id/cv4"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/maxsuptxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="Max Supply"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/maxsuppvalue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/maxsuptxt"
+                        android:layout_below="@+id/maxsuptxt"
+                        android:layout_marginTop="11dp"
+                        android:gravity="center_horizontal"
+                        android:text="null"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@id/centerShim"
+                android:layout_height="100dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/cv6"
+                android:layout_below="@+id/cv5"
+
+                android:padding="5dp"
+
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/cv4">
+
+                    <TextView
+                        android:id="@+id/tfvusdtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="24h Volume USD"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tfhvusdvalue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/tfvusdtxt"
+                        android:layout_below="@+id/tfvusdtxt"
+                        android:layout_marginTop="11dp"
+                        android:gravity="center_horizontal"
+                        android:text="null"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
